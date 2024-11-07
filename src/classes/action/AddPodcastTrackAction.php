@@ -110,7 +110,7 @@ class AddPodcastTrackAction extends Action
     {
         // Récupére la playlist de la session
         $tracks = $_SESSION['tracks'][$playlistName] ?? [];
-        $audioListRenderer = new AudioListRenderer(); // Assurez-vous que cette classe est définie
+        $audioListRenderer = new AudioListRenderer(); //TODO vérifier constructeur
 
         // Affiche la playlist
         $output = "<h2>Playlist : $playlistName</h2>";
